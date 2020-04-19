@@ -1,0 +1,247 @@
+<sdf version='1.6'>
+  <world name='default'>
+
+    <!-- ********** World Properties ********** -->
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>0</shadows>
+      <sky>
+        <clouds>
+          <speed>10</speed>
+        </clouds>
+      </sky>
+      <grid>0</grid>
+      <origin_visual>0</origin_visual>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <!-- ********** Roads ********** -->
+    <road name='main'>
+      <width>5</width>
+      <point>-100 -100 0</point>
+      <point>-15 -100 0</point>
+      <point>-5 -70 0</point>
+      <point>85 0 0</point>
+      <point>85 60 0</point>
+      <point>-28 60 0</point>
+      <point>-102.5 21 0</point>
+      <point>-102.5 -102.5 0</point>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Pedestrian</name>
+        </script>
+      </material>
+    </road>
+
+    <road name='menzies_entrance_busloop_side'>
+      <width>3</width>
+      <point>-5 -70 0</point>
+      <point>-5 -40 0</point>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Pedestrian</name>
+        </script>
+      </material>
+    </road>
+
+    <road name='menzies_entrance_CC_side'>
+      <width>3</width>
+      <point>-2 8 0</point>
+      <point>-2 57.5 0</point>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Pedestrian</name>
+        </script>
+      </material>
+    </road>
+
+    <road name='lawbry_entrance'>
+      <width>3</width>
+      <point>-3.5 -60 0</point>
+      <point>-25 -60 0</point>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Pedestrian</name>
+        </script>
+      </material>
+    </road>
+
+    <!--
+    <include>
+      <uri>model://grass_plane</uri>
+      <name>grass_plane_test</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    -->
+
+    <!-- ********** Models ********** -->
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>215 215</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>215 215</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <include>
+      <uri>model://lawbry</uri>
+      <pose>-50 -50 10 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://menzies</uri>
+      <pose>-2 -10 17.5 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree_1</name>
+      <uri>model://oak_tree</uri>
+      <pose>-30 -80 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree_2</name>
+      <uri>model://oak_tree</uri>
+      <pose>-45 -80 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree_3</name>
+      <uri>model://oak_tree</uri>
+      <pose>-60 -80 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>tree_4</name>
+      <uri>model://oak_tree</uri>
+      <pose>-75 -80 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>light_1</name>
+      <uri>model://lamp_post</uri>
+      <pose>-15 -102.5 0 0 0 3.14</pose>
+    </include>
+
+    <!-- ********** World State ********** -->
+    <state world_name='default'>
+      <sim_time>340 417000000</sim_time>
+      <real_time>343 281861487</real_time>
+      <wall_time>1587176484 71715975</wall_time>
+      <iterations>340417</iterations>
+      <model name='18'>
+        <pose frame=''>39.8331 26.1215 0.5 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_1'>
+          <pose frame=''>33.3331 34.6215 0.5 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 -1e-06 1e-06 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='link_2'>
+          <pose frame=''>46.3331 17.6215 0.5 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 -1e-06 1e-06 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>75.1038 -38.4821 47.6239 0 0.543643 2.34419</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
