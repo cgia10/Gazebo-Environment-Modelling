@@ -3,7 +3,11 @@ Using SDF to model a university campus environment in Gazebo simulator.
 
 ## Campus Section
 The following portion of campus has been modelled:
-![Image of Campus Section](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/campus.JPG)
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/campus.JPG)
+
+## Results
+Simulation progress below as at 19/4/20
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/)
 
 ## Testing:
 1. Clone this repo: https://github.com/cgia10/Gazebo-Environment-Modelling.git
