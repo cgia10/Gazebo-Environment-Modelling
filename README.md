@@ -7,9 +7,9 @@ Attempting to model the following section of campus:
 
 ## Results
 Progress as at 22/4/20:
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_top.JPG)
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_front.JPG)
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_closeup.JPG)
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_top.png)
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_front.png)
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_closeup.png)
 
 ## Testing:
 1. Terminal: git clone https://github.com/cgia10/Gazebo-Environment-Modelling.git
