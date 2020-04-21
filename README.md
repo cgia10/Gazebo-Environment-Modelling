@@ -5,8 +5,8 @@ Using SDF to model a university campus environment in Gazebo simulator.
 Aiming to model the following section of campus:
 
 <p align="center">
-    <img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG" width=420 height=360 hspace=20>
-    <img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus.JPG" width=323 height=296>
+    <img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG" width=420 height=360 hspace=40>
+    <img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus.JPG" width=420 height=384>
 </p>
 
 ## Results
