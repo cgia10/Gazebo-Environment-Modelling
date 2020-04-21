@@ -3,6 +3,10 @@ Using SDF to model a university campus environment in Gazebo simulator.
 
 ## Aim
 Aiming to model the following section of campus:
+![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG)
+
+## Results
+Progress as at 22/4/20:
 
 <table>
   <tr>
@@ -11,17 +15,16 @@ Aiming to model the following section of campus:
     <td align="center">Closeup</td>
   </tr>
   <tr>
-    <td><img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG" width=210 height=180></td>
+    <td><img src="Images/campus_top.JPG" width=210 height=180></td>
     <td><img src="Images/campus_front.JPG" width=455 height=201></td>
     <td><img src="Images/campus_closeup.JPG" width=440 height=204></td>
   </tr>
+  <tr>
+    <td><img src="Images/model_top.png" width=220 height=130></td>
+    <td><img src="Images/model_front.png" width=268 height=130></td>
+    <td><img src="Images/model_closeup.png" width=268 height=130></td>
+  </tr>
  </table>
-
-## Results
-Progress as at 22/4/20:
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_top.png)
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_front.png)
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/model_closeup.png)
 
 ## Testing:
 1. Terminal: git clone https://github.com/cgia10/Gazebo-Environment-Modelling.git
