@@ -6,22 +6,16 @@ Aiming to model the following section of campus:
 
 <table>
   <tr>
-    <p align="center">
-        <td>Top</td>
-    </p>
-    <p align="middle">
-        <td>Front</td>
-    </p>
-    <td>Closeup</td>
+    <td align="center">Top</td>
+    <td align="center">Front</td>
+    <td align="center">Closeup</td>
   </tr>
   <tr>
-    <td><img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG" width=420 height=360></td>
-    <td><img src="Images/campus_front.JPG" width=909 height=403></td>
-    <td><img src="Images/campus_closeup.JPG" width=881 height=408></td>
+    <td><img src="https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus_top.JPG" width=210 height=180></td>
+    <td><img src="Images/campus_front.JPG" width=455 height=201></td>
+    <td><img src="Images/campus_closeup.JPG" width=440 height=204></td>
   </tr>
  </table>
-
-![](https://raw.github.com/cgia10/Gazebo-Environment-Modelling/master/Images/campus.JPG)
 
 ## Results
 Progress as at 22/4/20:
