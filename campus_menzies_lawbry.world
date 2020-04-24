@@ -47,7 +47,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
 
-    <!-- ********** Roads ********** -->
+    <!-- ********** Roads ********** 
     <road name='main'>
       <width>5</width>
       <point>-100 -100 0</point>
@@ -101,7 +101,8 @@
         </script>
       </material>
     </road>
-
+    -->
+    
     <!--
     <include>
       <uri>model://grass_plane</uri>
@@ -110,7 +111,7 @@
     </include>
     -->
 
-    <!-- ********** Models ********** -->
+    <!-- ********** Models ********** 
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -198,8 +199,14 @@
       <uri>model://lamp_post</uri>
       <pose>-15 -102.5 0 0 0 3.14</pose>
     </include>
+    -->
+    <include>
+      <name>campus</name>
+      <uri>model://campus</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
 
-    <!-- ********** World State ********** -->
+    <!-- ********** World State ********** 
     <state world_name='default'>
       <sim_time>340 417000000</sim_time>
       <real_time>343 281861487</real_time>
@@ -235,6 +242,7 @@
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
     </state>
+    -->
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>75.1038 -38.4821 47.6239 0 0.543643 2.34419</pose>
@@ -242,6 +250,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    
 
   </world>
 </sdf>
