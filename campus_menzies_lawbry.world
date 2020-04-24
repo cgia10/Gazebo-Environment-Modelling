@@ -102,16 +102,8 @@
       </material>
     </road>
     -->
-    
-    <!--
-    <include>
-      <uri>model://grass_plane</uri>
-      <name>grass_plane_test</name>
-      <pose>0 0 0 0 0 0</pose>
-    </include>
-    -->
 
-    <!-- ********** Models ********** 
+    <!-- ********** Models ********** -->
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -119,7 +111,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>215 215</size>
+              <size>1100 1100</size>
             </plane>
           </geometry>
           <surface>
@@ -144,7 +136,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>215 215</size>
+              <size>1100 1100</size>
             </plane>
           </geometry>
           <material>
@@ -160,6 +152,7 @@
       </link>
     </model>
 
+    <!--
     <include>
       <uri>model://lawbry</uri>
       <pose>-50 -50 10 0 0 0</pose>
@@ -206,43 +199,6 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
-    <!-- ********** World State ********** 
-    <state world_name='default'>
-      <sim_time>340 417000000</sim_time>
-      <real_time>343 281861487</real_time>
-      <wall_time>1587176484 71715975</wall_time>
-      <iterations>340417</iterations>
-      <model name='18'>
-        <pose frame=''>39.8331 26.1215 0.5 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_1'>
-          <pose frame=''>33.3331 34.6215 0.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 -1e-06 1e-06 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='link_2'>
-          <pose frame=''>46.3331 17.6215 0.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 -1e-06 1e-06 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='ground_plane'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <light name='sun'>
-        <pose frame=''>0 0 10 0 -0 0</pose>
-      </light>
-    </state>
-    -->
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>75.1038 -38.4821 47.6239 0 0.543643 2.34419</pose>
