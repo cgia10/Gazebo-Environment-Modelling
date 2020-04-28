@@ -2,7 +2,7 @@
 Using OSM/Blender/SDF to model a university campus environment in Gazebo simulator.
 
 ## Results
-Progress as at 24/4/20:
+Progress as at 29/4/20:
 
 <table>
   <tr>
