@@ -20,8 +20,8 @@ Progress as at 29/4/20:
 ## Testing:
 1. Terminal: git clone https://github.com/cgia10/Gazebo-Environment-Modelling.git
 2. Add the /Models/ directory in this repo to the GAZEBO_MODEL_PATH environment variable
-    1. In terminal: source "your gazebo install path"/share/gazebo/setup.sh
-    2. In terminal: sudo nano "your gazebo install path"/share/gazebo/setup.sh
+    1. Terminal: source "your gazebo install path"/setup.sh (usually /usr/share/gazebo/setup.sh)
+    2. Terminal: sudo nano "your gazebo install path"/setup.sh (usually /usr/share/gazebo/setup.sh)
     3. Add the path to this repo's /Models/ directory. Enter the path in the line with the GAZEBO_MODEL_PATH variable, after the colon. Finish the path with another colon.
 3. cd into the root of this repo
-4. In terminal: gazebo campus.world
+4. Terminal: gazebo campus.world
